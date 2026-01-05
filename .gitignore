@@ -1,0 +1,25 @@
+# .gitignore
+
+# 1. [보안] 절대 커밋 금지 (API 키 파일)
+.env
+.env.*
+*.key
+secrets.json
+
+# 2. Python 자동 생성 파일 (불필요)
+__pycache__/
+*.py[cod]
+*$py.class
+
+# 3. 가상환경 폴더 (용량이 크고 로컬 전용임)
+venv/
+.venv/
+env/
+
+# 4. Mac 시스템 파일
+.DS_Store
+
+# 5. 에디터 설정 파일
+.vscode/
+*.sublime-workspace
+*.sublime-project
